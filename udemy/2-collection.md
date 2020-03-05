@@ -435,7 +435,7 @@ And that message is sent to SQS. Then you get back message identifier and MD5 ha
     - Data is deleted after the retention period
     - Ordering of records is preserved (at the shard level) - even during replays
     - Build multiple applications reading from the same stream independently (Pub/Sub)
-    - Streaming MapReduce querying capability by using Spark or somethign...
+    - Streaming MapReduce querying capability by using Spark or something...
     - Check pointing needed to track progress of consumption
     - Shard (capacity) must be provided ahead of time
 
