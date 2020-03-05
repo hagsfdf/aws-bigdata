@@ -2,9 +2,9 @@
 
 ## Roadmap
 
-- First week : A Cloud Guru 
+- First week : ~~A Cloud Guru~~
 - Second Week : Udemy ([linkhere](https://www.udemy.com/course/aws-big-data/)) with [LinuxAcademy](https://linuxacademy.com/course/aws-certified-big-data-specialty-course/)?
-- Third Week : Refer to official documentation of AWS (recommended service : Kinesis, ElasticSearch, QuickSight, RedShift, EMR, DynamoDB, CloudSearch, so on and so forth)
+- Third Week : Refer to official documentation of AWS (recommended service : Kinesis, ElasticSearch, QuickSight, RedShift, EMR, DynamoDB, CloudSearch, so on and so forth), [CrudeTest(WhizLab)](https://www.whizlabs.com/aws-certified-big-data-specialty/)
 - Last Week : Various White papers
 
 ## Useful Links
@@ -33,7 +33,7 @@
 
 ## Feedback from our second passer
 
-1.  Security questions were focused on limiting access to a portion of resources in S3, Redshift, DynamoDB ( based on roles)
+1. Security questions were focused on limiting access to a portion of resources in S3, Redshift, DynamoDB ( based on roles)
 2. Visualization was focussed on Quicksight visual types(atleast 2 Qs), while a couple were on scenario for Jupytor & D3.js, and on Quicksight underlying dataset
 3. ML was all about model Types ( binary. multi etc), along with instance type for deep learning
 4. EMR was part of solution in almost 50% of questions, so varied coverage - Hive, Spark, Presto featured. S3 similar nothing specific except security.
@@ -45,7 +45,7 @@ Some off-guard scenarios
 
 8. Multi PB of one time data migration within a tight timeframe choices were to pick between  Direct Connect or many Snowball edge. Edge was a interesting option since no processing requirement and all the data was in one data store - but there was no Snowball choice at all.
 9. In a 2 part answer - one part was Emergency response with a few seconds delay allowance, choices were SQS or Kinesis streams. The other part of the answer convinced me to side with SQS but I wonder if it is also because SQS is more reliable than Kinesis Streams.
-10.  Centralized Hive metastore, requirement to share between multiple teams in same account  - there was no option of Glue service which I found interesting.
+10. Centralized Hive metastore, requirement to share between multiple teams in same account  - there was no option of Glue service which I found interesting.
 11. RCU, WCU computation based on a expected Read/Write ratio rather than actual processing metrics
 
 
