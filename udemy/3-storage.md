@@ -300,9 +300,12 @@ Strongly consistent read (expensive, latency) vs Eventually consistent read (def
     - consumes WCU
 - UpdateItem - update data in DynamoDB (partial update of attributes)
     - possibility to use atomic counters and increase them
+
+> small note: atomic counter? A numeric attribute that is incremented in case of update. You can use it to track the number of visitors to a website (with a possibility to overcounting or downcounting)
+
 - Conditional Writes:
     - accept a write / update only if conditions are respected / otherwise reject
-    - Helps with concurrent access to itmes
+    - Helps with concurrent access to items
     - no performance impact
 
 ### Deleting Data
