@@ -580,8 +580,9 @@ You might want to move from a database on premise into the cloud environment. Ho
     - Homogeneous migration: ex) Oracle to Oracle
     - Heterogeneous migration ex) Microsoft SQL server to Aurora
 
-- How? Continuous Data Replication using CDC 
+- How? Continuous Data Replication using CDC (Change Data Capture)
 - You must create an EC2 instance to perform the replication tasks
+- supports High Availability and DR by multiple AZ
 
 
 ## DMS sources and Targets
@@ -597,8 +598,8 @@ Target:
 ## AWS Schema Conversion Tool (SCT)
 
 - Convert your database's schema from one engine to another
-- OLTP ex) (SQL server or oracle) to MySQL, PostgreSQL, Aurora...
-- OLAP ex) (Teradata or Oracle) to Amazon Redshift
+- OLTP ex) From SQL server or oracle to MySQL, PostgreSQL, Aurora...
+- OLAP ex) From Teradata or Oracle to Amazon Redshift
 
 - You can use AWS SCT to create AWS DMS endpoints and tasks
 
@@ -611,7 +612,7 @@ Target:
 
 Did this before! Provides a dedicated **private** connection from a remote network to your VPC. 
 
-- Can setup multiple 1 Gbps or 10 Gbps dedicated netowrk connections
+- Can setup multiple 1 Gbps or 10 Gbps dedicated network connections
 - Setup Dedicated connection between your DC and Direct Connect locations
 - You need to setup a Virtual Private Gateway on your VPC
 - Access public resources (S3) and private (EC2) on same connection
