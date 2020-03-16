@@ -274,7 +274,7 @@ Strongly consistent read (expensive, latency) vs Eventually consistent read (def
 - If we exceed our RCU or WCU, we get ProvisionedThroughputException. 
 - Reasons:
     - Hot keys/partitions : one partition key is being read too many times
-    - Very large items: remember RCU and WCU depend on size of itemrs
+    - Very large items: remember RCU and WCU depend on size of items
 - Solutions : 
     - Exponential back-off (already in SDK) ([link](https://en.wikipedia.org/wiki/Exponential_backoff)) (algorithm for retransmission of failed objects, the number of possibilities for delay increases exponentially)
     - Distribute partition keys
@@ -284,7 +284,7 @@ Strongly consistent read (expensive, latency) vs Eventually consistent read (def
 
 - You start with one partition for newly created table
 - Each partition:
-    - Max of 300 RCU / 1000 WCU
+    - Max of 3000 RCU / 1000 WCU
     - Max of 10GB
 - To compute the number of partitions
     - By capacity: (TOTAL RCU/3000) + (TOTAL WCU/1000)

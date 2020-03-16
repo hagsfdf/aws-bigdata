@@ -389,6 +389,8 @@ Compound key is made up of all columns listed in the sort key definition in the 
 
 ![compound](https://hevodata.com/blog/wp-content/uploads/2017/10/Screen-Shot-2017-10-08-at-4.40.21-PM.png)
 
+Good for JOIN, GROUP BY & ORDER BY, PARTITION BY & ORDER BY ...
+
 ### Interleaved key
 
 Gives equal weight to each column in the Redshift sort keys. For query uses restrictive predicates (equality operator in WHERE clause) on secondary sort columns.
@@ -396,6 +398,8 @@ Gives equal weight to each column in the Redshift sort keys. For query uses rest
 ![interleave](https://hevodata.com/blog/wp-content/uploads/2017/10/Screen-Shot-2017-10-08-at-4.41.12-PM.png)
 
 It uses an internal compression scheme for a zone map values that enables them to better discriminate among column values that have a long common prefix.
+
+Do not use interleaved key for increasing attributes like Date, Timestamp, or something. 
 
 ## Importing / Exporting Data
 

@@ -3,7 +3,7 @@
 ## Roadmap
 
 - First week : ~~A Cloud Guru~~
-- Second Week : Udemy ([linkhere](https://www.udemy.com/course/aws-big-data/)) with [LinuxAcademy](https://linuxacademy.com/course/aws-certified-big-data-specialty-course/)?
+- Second Week : Udemy ([linkhere](https://www.udemy.com/course/aws-big-data/)) with [LinuxAcademy](https://linuxacademy.com/course/aws-certified-big-data-specialty-course/), and [QwikLabs](https://www.qwiklabs.com/focuses/8714?parent=catalog)?
 - Third Week : Refer to official documentation of AWS (recommended service : Kinesis, ElasticSearch, QuickSight, RedShift, EMR, DynamoDB, CloudSearch, so on and so forth), [CrudeTest(WhizLab)](https://www.whizlabs.com/aws-certified-big-data-specialty/)
 - Last Week : Various White papers
 
