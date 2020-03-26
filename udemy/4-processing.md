@@ -350,6 +350,7 @@ The framework here is exactly the same as Hive, on the top of the HDFS, on the t
 
 - Ability to use multiple file systems (not just limited to HDFS) (EMR friendly) (e.x. query data in S3)
 - Load JAR's and scripts from S3
+- Directly writing to HCatalog tables in S3
 
 ## HBase on EMR
 

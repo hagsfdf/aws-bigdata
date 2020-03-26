@@ -163,7 +163,7 @@ So how does Kinesis know how long they have to wait? Batching efficiency can be 
 So if the kinesis data stream has N shards, then consumer application A makes GetRecords() request to the shard number 1, and the shard 1 is responsible for providing the data. (This is polling mechanism)
 
 - GetRecords returns up to 10MB of data ( then throttle for 5 seconds ) or up to 10000 records. (5 second = 10MB/2MB(throughput))
-- Maximum of 5 GetRecords API calls per shard per second = 200ms latency
+- Maximum of 5 GetRecords API calls(= transactions) per shard per second = 200ms latency
 - **If 5 consumers application consume from the same shard, means every consumer can poll once a second (200ms * 5) and receive less than 400KB/s (=2MB / 5))**
 
 ### KCL (Kinesis Client Library)
@@ -300,7 +300,7 @@ S3, RedShift, ElasticSearch, Splunk as a destination
 
 Source delivers stream to firehose. Firehose can do some data conversion with the AWS Lambda (CSV -> JSON...) Several blueprint templates available for Lambda.
 
-Then, the fomatted data can be sent to S3. If the destination is redshift, technically, it will go into S3 first, and there will be a copy command to put that data into redshift.
+Then, the formatted data can be sent to S3. If the destination is redshift, technically, it will go into S3 first, and there will be a copy command to put that data into redshift.
 
 Without the conjunction of Lambda, we can **get all the source data into an Amazon S3 bucket** by kinesis firehose!
 
